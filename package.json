@@ -8,6 +8,13 @@
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
-  "version": "1.0.0",
-  "codename": "SpiritFarer"
+  "bin": {
+    "ashes-urn-spinup": "./index.ts"
+  },  
+  "version": "40.0.0",
+  "codename": "SpiritFarer",
+  "dependencies": {
+    "minimist": "^1.2.8",
+    "toolbx": "^1.1.1"
+  }
 }
