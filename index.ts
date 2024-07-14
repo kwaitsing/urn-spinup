@@ -23,6 +23,13 @@ if (fs.existsSync(scaffold)) {
 try {
     await $`git clone https://github.com/kwaitsing/urn-spinup-template.git ${scaffold}`.quiet()
     await $`cd ${scaffold} && bun install`.quiet()
+    // Modify the template
+    fs.rmSync(`${scaffold}/.git`, {recursive: true, force: true})
+    if (assignDir) {
+       let contents = await Bun.file(`${scaffold}/package.json`).json();
+       contents.name = assignDir
+       await Bun.write(`${scaffold}/package.json`, JSON.stringify(contents, null, 2));
+    }
 } catch (err) {
     logger(`Something went wrong ${err}`, 2)
 }
