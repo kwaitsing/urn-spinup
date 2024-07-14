@@ -11,7 +11,7 @@
   "bin": {
     "ashes-urn-spinup": "./index.ts"
   },  
-  "version": "40.0.1",
+  "version": "40.0.2",
   "codename": "SpiritFarer",
   "dependencies": {
     "minimist": "^1.2.8",

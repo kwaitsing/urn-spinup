@@ -1,15 +1,19 @@
 # ashes-urn-spinup
 
-To install dependencies:
+**Windows is not supported and will never be supported**
 
-```bash
-bun install
+Please, use WSL if you're on Windows
+
+Package.json -> name will be assigned by the basename of where you init
+
+> To init your project
+
+```
+> bunx ashes-urn-spinup meow
 ```
 
-To run:
+or
 
-```bash
-bun run index.ts
 ```
-
-This project was created using `bun init` in bun v1.1.14. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+> bunx ashes-urn-spinup .
+```
