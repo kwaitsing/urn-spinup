@@ -11,8 +11,8 @@
   "bin": {
     "ashes-urn-spinup": "./index.ts"
   },  
-  "version": "40.0.2",
-  "codename": "SpiritFarer",
+  "version": "100.0.7",
+  "codename": "TwilightSaga",
   "dependencies": {
     "minimist": "^1.2.8",
     "toolbx": "^1.1.1"

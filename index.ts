@@ -21,7 +21,7 @@ if (fs.existsSync(scaffold)) {
 
 // Git clone the spin-up template
 try {
-    await $`git clone https://github.com/kwaitsing/urn-spinup-template.git ${scaffold}`.quiet()
+    await $`git clone https://github.com/kwaitsing/urn-spinup-template.git --depth 1 ${scaffold}`.quiet()
     await $`cd ${scaffold} && bun install`.quiet()
     // Modify the template
     fs.rmSync(`${scaffold}/.git`, { recursive: true, force: true })
